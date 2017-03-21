@@ -1,0 +1,110 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/fredrikwallstrom/Kandidaten/tape_on_registration
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
+  CMakeLists.txt:4 (find_package)
+
+
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
+  CMakeLists.txt:4 (find_package)
+
+
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
+  CMakeLists.txt:4 (find_package)
+
+
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
+  CMakeLists.txt:4 (find_package)
+
+
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
+  CMakeLists.txt:4 (find_package)
+
+
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
+  CMakeLists.txt:4 (find_package)
+
+
+CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
+  Imported targets not available for Boost version 106300
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
+  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
+  CMakeLists.txt:4 (find_package)
+
+
+-- Boost version: 1.63.0
+-- Found the following Boost libraries:
+--   system
+--   filesystem
+--   thread
+--   date_time
+--   iostreams
+--   serialization
+--   chrono
+-- Checking for module 'libopenni'
+--   No package 'libopenni' found
+-- Could NOT find openni (missing:  OPENNI_LIBRARY OPENNI_INCLUDE_DIRS) 
+** WARNING ** io features related to openni will be disabled
+-- Checking for module 'libopenni2'
+--   No package 'libopenni2' found
+-- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+** WARNING ** io features related to openni2 will be disabled
+-- Could NOT find ensenso (missing:  ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
+** WARNING ** io features related to ensenso will be disabled
+-- Could NOT find DAVIDSDK (missing:  DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
+** WARNING ** io features related to davidSDK will be disabled
+-- Could NOT find DSSDK (missing:  _DSSDK_LIBRARIES) 
+** WARNING ** io features related to dssdk will be disabled
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+-- looking for PCL_COMMON
+-- looking for PCL_OCTREE
+-- looking for PCL_IO
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/fredrikwallstrom/Kandidaten/tape_on_registration/cmake-build-debug
