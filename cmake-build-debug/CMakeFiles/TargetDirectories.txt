@@ -1,3 +1,0 @@
-/home/hampus/Documents/school/kandidat/tape_on_registration/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/hampus/Documents/school/kandidat/tape_on_registration/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/hampus/Documents/school/kandidat/tape_on_registration/cmake-build-debug/CMakeFiles/tape_on_registration.dir
