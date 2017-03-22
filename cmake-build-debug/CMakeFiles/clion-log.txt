@@ -1,82 +1,31 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/fredrikwallstrom/Kandidaten/tape_on_registration
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
-  Imported targets not available for Boost version 106300
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
-  CMakeLists.txt:4 (find_package)
-
-
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
-  Imported targets not available for Boost version 106300
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
-  CMakeLists.txt:4 (find_package)
-
-
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
-  Imported targets not available for Boost version 106300
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
-  CMakeLists.txt:4 (find_package)
-
-
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
-  Imported targets not available for Boost version 106300
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
-  CMakeLists.txt:4 (find_package)
-
-
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
-  Imported targets not available for Boost version 106300
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
-  CMakeLists.txt:4 (find_package)
-
-
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
-  Imported targets not available for Boost version 106300
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
-  CMakeLists.txt:4 (find_package)
-
-
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:743 (message):
-  Imported targets not available for Boost version 106300
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:842 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.6/Modules/FindBoost.cmake:1395 (_Boost_MISSING_DEPENDENCIES)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:117 (find_package)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:627 (find_boost)
-  /usr/local/share/pcl-1.8/PCLConfig.cmake:841 (find_external_library)
-  CMakeLists.txt:4 (find_package)
-
-
--- Boost version: 1.63.0
+/opt/clion-2016.3.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/hampus/Documents/school/kandidat/tape_on_registration
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.2.92
+-- Found eigen: /usr/include/eigen3  
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Boost version: 1.58.0
 -- Found the following Boost libraries:
 --   system
 --   filesystem
@@ -85,26 +34,43 @@ Call Stack (most recent call first):
 --   iostreams
 --   serialization
 --   chrono
+--   atomic
+--   regex
 -- Checking for module 'libopenni'
---   No package 'libopenni' found
--- Could NOT find openni (missing:  OPENNI_LIBRARY OPENNI_INCLUDE_DIRS) 
-** WARNING ** io features related to openni will be disabled
+--   Found libopenni, version 1.5.4.0
+-- Found openni: /usr/lib/libOpenNI.so  
 -- Checking for module 'libopenni2'
 --   No package 'libopenni2' found
 -- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
 ** WARNING ** io features related to openni2 will be disabled
--- Could NOT find ensenso (missing:  ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) 
-** WARNING ** io features related to ensenso will be disabled
--- Could NOT find DAVIDSDK (missing:  DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) 
-** WARNING ** io features related to davidSDK will be disabled
--- Could NOT find DSSDK (missing:  _DSSDK_LIBRARIES) 
-** WARNING ** io features related to dssdk will be disabled
 ** WARNING ** io features related to pcap will be disabled
 ** WARNING ** io features related to png will be disabled
-** WARNING ** io features related to libusb-1.0 will be disabled
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+but not all the files it references.
+
+-- Found libusb-1.0: /usr/include  
 -- looking for PCL_COMMON
+-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
 -- looking for PCL_OCTREE
+-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
 -- looking for PCL_IO
+-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_common.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;/usr/lib/libOpenNI.so;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL;optimized;/usr/lib/x86_64-linux-gnu/libpcl_io.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_io.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/libOpenNI.so;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL (Required is at least version "1.3") 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/fredrikwallstrom/Kandidaten/tape_on_registration/cmake-build-debug
+-- Build files have been written to: /home/hampus/Documents/school/kandidat/tape_on_registration/cmake-build-debug
