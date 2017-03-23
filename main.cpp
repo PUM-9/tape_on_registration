@@ -2,14 +2,15 @@
 #include <pcl/io/pcd_io.h>
 #include <pcl/visualization/pcl_visualizer.h>
 #include <map>
-
+#include <pcl/filters/passthrough.h>
+#include <pcl/point_types.h>
 
 typedef pcl::PointXYZ Point;
 typedef pcl::PointCloud<Point> Cloud;
 typedef Cloud::Ptr CloudPtr;
 typedef float millimeter;
 
-Cloud generate_cuboid(const millimeter width, const millimeter height, const millimeter depth, Cloud &cuboid) {
+void generate_cuboid(const millimeter width, const millimeter height, const millimeter depth, Cloud &cuboid) {
 
     millimeter step_size = 0.1;
 
@@ -204,22 +205,36 @@ std::map<const std::string, Point> find_rectangle_corners(const Cloud &pointClou
     return corners;
 }
 
+void filter_out_stick(CloudPtr before, CloudPtr after) {
+    pcl::PassThrough<Point> passThrough;
+    passThrough.setInputCloud(before);
+    passThrough.setFilterFieldName("z");
+    passThrough.setFilterLimits(0.0, 1.0);
+    passThrough.filter(*after);
+}
+
 int main() {
 
-    Cloud pointCloud = Cloud();
+    CloudPtr pointCloudPtr (new Cloud());
+    CloudPtr filteredCloudPtr (new Cloud());
 
-    pcl::io::loadPCDFile("cube/cube0000.pcd", pointCloud);
+    pcl::io::loadPCDFile("cube/cube0000.pcd", *pointCloudPtr);
 
+    filter_out_stick(pointCloudPtr, filteredCloudPtr);
+
+    pcl::io::savePCDFile("filtered.pcd", *filteredCloudPtr);
+
+/*
     std::map<const std::string, Point> corners = find_rectangle_corners(pointCloud);
 
     cout << "origo: " << corners["origo"] << std::endl;
     cout << "x: " << corners["x"] << std::endl;
     cout << "y: " << corners["y"] << std::endl;
-//    cout << "z: " << corners["z"] << std::endl;
+    cout << "z: " << corners["z"] << std::endl;
     cout << "xy: " << corners["xy"] << std::endl;
- //   cout << "yz: " << corners["yz"] << std::endl;
- //   cout << "xz: " << corners["xz"] << std::endl;
- //   cout << "xyz" << corners["xyz"] << std::endl;
-
+    cout << "yz: " << corners["yz"] << std::endl;
+    cout << "xz: " << corners["xz"] << std::endl;
+    cout << "xyz" << corners["xyz"] << std::endl;
+*/
     return 0;
 }
