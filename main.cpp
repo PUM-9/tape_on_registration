@@ -3,36 +3,57 @@
 #include <pcl/visualization/pcl_visualizer.h>
 
 
-typedef pcl::PointCloud<pcl::PointXYZ> cloud;
-typedef cloud::Ptr cloudPtr;
+typedef pcl::PointXYZ Point;
+typedef pcl::PointCloud<Point> Cloud;
+typedef Cloud::Ptr CloudPtr;
+typedef float millimeter;
 
 int main() {
+    
+    millimeter width = 45.0;
+    millimeter height = 30.0;
+    millimeter depth = 30.0;
+    millimeter step_size = 0.1;
+    Cloud cube = Cloud();
 
+    // Create two xy planes in the xzy space.
+    for (millimeter i=0; i<width; i+=step_size) {
 
-
-
-
-
-    // Code snippet below doesnt work.
-    /*
-    cloudPtr cube (new Cloud());
-    int side = 10 + 1;
-    cube->points.resize(pow (side, 3));
-    cube->width = cube ->points.size();
-    cube->height = 1;
-    int p = 0;
-    for (size_t i = 0; i < side; i++){
-        for (size_t j = 0; j < side; j++){
-            for (size_t k = 0; k < side; k++){
-
-                cube->points[p].getVector3fMap()=Eigen::Vector3f(i,j,k);
-                p++;
-            }
+        for (millimeter j=0; j<height; j+=step_size) {
+            //Add one point for each side of the cube
+            Point point1 = Point(i, j, 0);
+            Point point2 = Point(i, j, depth);
+            cube.push_back(point1);
+            cube.push_back(point2);
         }
 
     }
-    pcl::io::savePCDFileASCII("test.pcd", *cube);
-    */
+
+    // Create two yz planes in the xyz space.
+    for (millimeter i=0; i<depth; i+=step_size) {
+
+        for (millimeter j=0; j<height; j+=step_size) {
+            Point point1 = Point(0, j, i);
+            Point point2 = Point(width, j, i);
+            cube.push_back(point1);
+            cube.push_back(point2);
+        }
+
+    }
+
+    // Create two xz planes in the xyz space.
+    for (millimeter i=0; i<depth; i+=step_size) {
+
+        for (millimeter j=0; j<width; j+=step_size) {
+            Point point1 = Point(j, 0, i);
+            Point point2 = Point(j, height, i);
+            cube.push_back(point1);
+            cube.push_back(point2);
+        }
+
+    }
+
+    pcl::io::savePCDFileASCII("test.pcd", cube);
 
     return 0;
 }
