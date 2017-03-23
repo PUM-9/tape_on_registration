@@ -206,27 +206,43 @@ std::map<const std::string, Point> find_rectangle_corners(const Cloud &pointClou
 }
 
 void filter_out_stick(CloudPtr before, CloudPtr after) {
-    pcl::PassThrough<Point> passThrough;
+    pcl::PassThrough<pcl::PointXYZ> passThrough;
     passThrough.setInputCloud(before);
-    passThrough.setFilterFieldName("z");
-    passThrough.setFilterLimits(0.0, 1.0);
+    passThrough.setFilterFieldName("x");
+    passThrough.setFilterLimits(400, 510);
+    passThrough.setFilterLimitsNegative(false);
     passThrough.filter(*after);
+}
+
+bool is_rectangle(CloudPtr cloud) {
+
+    std::map<const std::string, Point> corners = find_rectangle_corners(*cloud);
+
+    float origo_to_x = std::abs(corners["x"].x - corners["origo"].x);
+    float x_to_xy = std::abs(corners["xy"].y - corners["x"].y);
+    float y_to_xy = std::abs(corners["xy"].x - corners["y"].x);
+    float origo_to_y = std::abs(corners["y"].y - corners["origo"].y);
+
+    const int tolerance_factor = 20;
+    float x_tolerance = origo_to_x / tolerance_factor;
+    float y_tolerance = origo_to_y / tolerance_factor;
+
+    return (std::abs(origo_to_x - y_to_xy) < x_tolerance) && (std::abs(origo_to_y - x_to_xy) < y_tolerance);
+
 }
 
 int main() {
 
-    CloudPtr pointCloudPtr (new Cloud());
-    CloudPtr filteredCloudPtr (new Cloud());
+    CloudPtr point_cloud_ptr (new Cloud());
+    CloudPtr filtered_cloud_ptr (new Cloud());
 
-    pcl::io::loadPCDFile("cube/cube0000.pcd", *pointCloudPtr);
+    pcl::io::loadPCDFile("cube/cube0005.pcd", *point_cloud_ptr);
 
-    filter_out_stick(pointCloudPtr, filteredCloudPtr);
+    filter_out_stick(point_cloud_ptr, filtered_cloud_ptr);
 
-    pcl::io::savePCDFile("filtered.pcd", *filteredCloudPtr);
+    cout << is_rectangle(filtered_cloud_ptr) << endl;
 
 /*
-    std::map<const std::string, Point> corners = find_rectangle_corners(pointCloud);
-
     cout << "origo: " << corners["origo"] << std::endl;
     cout << "x: " << corners["x"] << std::endl;
     cout << "y: " << corners["y"] << std::endl;
