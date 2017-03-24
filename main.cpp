@@ -5,24 +5,30 @@
 
 typedef pcl::PointXYZ Point;
 typedef pcl::PointCloud<Point> Cloud;
-typedef Cloud::Ptr CloudPtr;
+
 typedef float millimeter;
 
+/**
+ * This functions creates a cuboid shaped pointcloud based on 3 parameters height, width and depth. these are modified
+ * so that the cloud is placed on the right coordinates in a 3D space.
+ * @return
+ */
 int main() {
     
-    millimeter depth = 460.0;
-    millimeter height = 430.0;
-    millimeter width = 430.0;
+    millimeter depth = 60.0;
+    millimeter height = 30.0;
+    millimeter width = 30.0;
+    millimeter modifier = 400; // used to modify the position of the pointcloud
     millimeter step_size = 0.5;
     Cloud cube = Cloud();
 
     // Create two xy planes in the xzy space.
-    for (millimeter i=400; i<width; i+=step_size) {
+    for (millimeter i=(0+modifier); i<(width+modifier); i+=step_size) {
 
-        for (millimeter j=400; j<height; j+=step_size) {
+        for (millimeter j=(0+modifier); j<(height+modifier); j+=step_size) {
             //Add one point for each side of the cube
-            Point point1 = Point(i, j, -400);
-            Point point2 = Point(i, j, -depth);
+            Point point1 = Point(i, j, -(0+modifier)); //places a point at negative z value to get cloud in right place
+            Point point2 = Point(i, j, -(depth+modifier)); //places a point at negative z value to get cloud in right place
             cube.push_back(point1);
             cube.push_back(point2);
         }
@@ -30,11 +36,11 @@ int main() {
     }
 
     // Create two yz planes in the xyz space.
-    for (millimeter i=400; i<depth; i+=step_size) {
+    for (millimeter i=(0+modifier); i<(depth+modifier); i+=step_size) {
 
-        for (millimeter j=400; j<height; j+=step_size) {
-            Point point1 = Point(400, j, -i);
-            Point point2 = Point(width, j, -i);
+        for (millimeter j=(0+modifier); j<(height+modifier); j+=step_size) {
+            Point point1 = Point((0+modifier), j, -i);//places a point at negative z value to get cloud in right place
+            Point point2 = Point((width+modifier), j, -i);//places a point at negative z value to get cloud in right place
             cube.push_back(point1);
             cube.push_back(point2);
         }
@@ -42,11 +48,11 @@ int main() {
     }
 
     // Create two xz planes in the xyz space.
-    for (millimeter i=400; i<depth; i+=step_size) {
+    for (millimeter i=(0+modifier); i<(depth+modifier); i+=step_size) {
 
-        for (millimeter j=400; j<width; j+=step_size) {
-            Point point1 = Point(j, 400, -i);
-            Point point2 = Point(j, height, -i);
+        for (millimeter j=(0+modifier); j<(width+modifier); j+=step_size) {
+            Point point1 = Point(j, (0+modifier), -i);//places a point at negative z value to get cloud in right place
+            Point point2 = Point(j, (height+modifier), -i);//places a point at negative z value to get cloud in right place
             cube.push_back(point1);
             cube.push_back(point2);
         }
